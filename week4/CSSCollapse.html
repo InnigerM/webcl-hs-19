@@ -19,8 +19,8 @@
             transition:   max-height 0.5s ease-out;
         }
 
-        /* collapsed div todo: change css selector*/
-        div {
+        /* collapsed div */
+        input[type=checkbox].hidden:checked + label.toggle + div {
             max-height: 0;
             transition:  max-height 0.5s ease-out;
         }
@@ -42,10 +42,10 @@
             clip-path:         var(--arrow-down);
             transition: transform 0.5s;
         }
-
-        /* todo rotate arrow on collapse */
-        label .toggle{
-            transform: rotate(-90deg);
+        
+        input[type=checkbox].hidden:checked + label.toggle:before {
+            transform:  rotate(-90deg);
+            transition: transform 0.5s;
         }
 
     </style>
