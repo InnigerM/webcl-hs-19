@@ -21,10 +21,17 @@ input[type=text] {
     font-size:      1.1em;
     color:          darkblue;
     border-width:   0 0 1px 0;
+
+    background-image: linear-gradient(orangered, orangered);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 input[type=text]:focus {
-    border-color:   orange;
     outline:        transparent none 0;
+
+    background-size: 100% 1px;
+    transition: background-size linear 0.5s;
 }
 #todoContainer {
     display:        grid;
