@@ -49,7 +49,7 @@ Note that todo items are not yet created:
 [SVG Eyes View](https://webengineering-fhnw.github.io/webcl-hs-19/week7/svg-eyes-sketch/Eyes.html)
 
 ## week 8
-- Drag&Drop enabled sketch for the staff and project planning tool 
+- Drag&Drop enabled [sketch](https://webengineering-fhnw.github.io/webcl-hs-19/week8/pep-sketch/PEP.html) for the staff and project planning tool 
 - Mathematically based SVG animation to fill a bucket
 [Personnel planning](https://webengineering-fhnw.github.io/webcl-hs-19/week8/pep-sketch/PEP.html),
 [Bucket SVG](https://webengineering-fhnw.github.io/webcl-hs-19/week8/svg-bucket-sketch/BucketWAF.html)
@@ -60,7 +60,12 @@ Note that todo items are not yet created:
 
 ## week 10
 Student submissions:
-- [Angular Gauge](https://github.com/Chiirali/angular-gauge)
+- [Angular Bucket](https://github.com/Chiirali/angular-bucket)
 - [Svelte SVG](https://github.com/gobeli/webcl-svg)
 - [React Eye SVG](https://github.com/knnhcn/react-eye-svg)
+- [React Gauge](https://github.com/peerjuettner/react-gauge)
+- [Vue PigEyes](https://codesandbox.io/s/vue-template-4ehxh)
 
+## week 11
+- Grails Backendserver for the pep personnel planning tool with example client (https://github.com/WebEngineering-FHNW/webcl-hs19-server)
+- Pep client app uses fetch api to connect to backend (https://github.com/WebEngineering-FHNW/webcl-hs19-server/tree/restify)
