@@ -69,3 +69,16 @@ Student submissions:
 ## week 11
 - Grails Backendserver for the pep personnel planning tool with example client (https://github.com/WebEngineering-FHNW/webcl-hs19-server)
 - Pep client app uses fetch api to connect to backend (https://github.com/WebEngineering-FHNW/webcl-hs19-server/tree/restify)
+
+## week 12
+=> Week 6 Person View observable updated with listener limit to resolve memory leak
+[Person View](https://webengineering-fhnw.github.io/webcl-hs-19/week6/person/View.html), 
+[Tests](https://webengineering-fhnw.github.io/webcl-hs-19/week6/allTestsAsync.html)
+
+## week 13
+- [Server Push Alternatives](https://github.com/gobeli/webcl-server-push)
+- [CSS media selector, simple timeline](https://gitlab.imbiscuso.ch/Mischa/css-tricks-webcl)
+- Stable bindings with view specific presentation models instead of listener limit
+- ModelWorld with qualifiers to synchronize the attribute values
+[Person View](https://webengineering-fhnw.github.io/webcl-hs-19/week13/person/View.html), 
+[Tests](https://webengineering-fhnw.github.io/webcl-hs-19/week13/allTestsAsync.html)

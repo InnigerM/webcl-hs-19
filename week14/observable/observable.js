@@ -1,13 +1,24 @@
 
 export {Observable, ObservableList}
 
+/**
+ * @type    {object}
+ * @typedef {{getValue: (function(): *), onChange: onChange, setValue: setValue}} Observable
+ */
+
+/**
+ * @param value
+ * @return {Observable}
+ * @constructor
+ */
 const Observable = value => {
     const listeners = [];
     return {
         onChange: callback => {
-            if(listeners.length > 3) { listeners.pop(); } // this is very limiting (but resolves the memory leak)
             listeners.push(callback);
-            // console.log(listeners.length);
+            if (listeners.length > 3) {
+                console.debug("log listener count suspicious: ", listeners.length);
+            }
             callback(value, value);
         },
         getValue: ()       => value,
@@ -33,11 +44,11 @@ const ObservableList = list => {
         onDel: listener => delListeners.push(listener),
         add: item => {
             list.push(item);
-            addListeners.forEach( listener => listener(item))
+            addListeners.forEach( listener => listener(item));
             return item;
         },
         del: item => {
-            listRemoveItem(item);
+            const r = listRemoveItem(item);
             const safeIterate = [...delListeners]; // shallow copy as we might change listeners array while iterating
             safeIterate.forEach( (listener, index) => listener(item, () => delListenersRemove(index) ));
         },
