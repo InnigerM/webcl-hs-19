@@ -23,8 +23,8 @@ const PepController = () => {
         {week:3, devId:1, avail:0},
     ];
     const projects = [
-        {id:0, color: 'red',   name: "Personal Einsatz Planung"},
-        {id:1, color: 'green', name: "Web Clients"},
+        {id:0, color: 'yellow',   name: "Personal Einsatz Planung"},
+        {id:1, color: 'violet', name: "Web Clients"},
     ];
     const FTEs = [
         {week:0, projId:0, fte:100},

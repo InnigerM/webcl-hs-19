@@ -4,10 +4,12 @@ body {
     font-family: "Arial", "sans-serif";
     height: 100vh;
     user-select: none; /* avoid text selection when dragging over text */
-    background-color: rgb(88,88,88);
-    --developer-color: #A5523F;
-    --project-color: #A56124;
-    --hightlight-overlay: #BE7F30;
+    background-image: url("https://marketplace.canva.com/MADesCiqolw/1/thumbnail_large/canva-4k-low-poly-background-MADesCiqolw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    --developer-color: #38001d;
+    --project-color: #223e86;
+    --hightlight-overlay: #f58d0f;
     --drop-shadow: 0 .5em 0.5em #D4D4D4;
 }
 
@@ -40,14 +42,16 @@ body {
     background-repeat: no-repeat;
     background-size: 6em;
     background-position: left top;
+    color: white;
     border: 4px solid var(--developer-color);
 }
 
 .topic.project {
+    color: white;
     --pid-color: var(--project-color);
     border: 4px solid var(--project-color);
     background-image: linear-gradient(90deg, var(--pid-color), var(--pid-color) 6em, transparent 6em);
-    background-blend-mode: color-burn;
+    background-blend-mode: exclusion;
 }
 
 .week {
@@ -68,29 +72,30 @@ body {
 .week.project {
     border: .3em 0 1px 0px var(--project-color),
     var(--drop-shadow);
+    color: white;
     background: var(--project-color);
 }
 
 .header {
     background-color: transparent;
-    color: gray;
     text-align: center;
     font-weight: bold;
     padding: 1em;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid black;
 }
 
 .assignment {
     border: 1em solid var(--drop-shadow);
     padding: 0.5em;
-    border-radius: 0.5em;
+    border-radius: 1em;
     overflow: hidden;
 }
 
 .assignment.project {
+    color: white;
     --pid-color: var(--project-color); /* to be set dynamically in assignment projector */
     background-image: linear-gradient(90deg, var(--pid-color), var(--pid-color) 15%, transparent 15%);
-    background-blend-mode: color-burn;
+    background-blend-mode: exclusion;
     padding: 0.5em 0.5em 0.5em 17%;
 }
 
@@ -104,6 +109,17 @@ body {
 
 .assignment.developer:hover{
     background-color: var(--hightlight-overlay);
+}
+
+.soll::after{
+    position: relative;
+    top: -30px;
+    bottom: 0;
+    right: 10px;
+    left: 20px;
+    background-color: aqua;
+    opacity: 1;
+    width: 200%;
 }
 
 .soll {
