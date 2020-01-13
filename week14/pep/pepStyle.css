@@ -111,15 +111,9 @@ body {
     background-color: var(--hightlight-overlay);
 }
 
-.soll::after{
-    position: relative;
-    top: -30px;
-    bottom: 0;
-    right: 10px;
-    left: 20px;
-    background-color: aqua;
-    opacity: 1;
-    width: 200%;
+/* https://css-tricks.com/solved-with-css-logical-styling-based-on-the-number-of-given-elements/ */
+div:first-child:nth-last-child(3){
+    background-color: red;
 }
 
 .soll {
