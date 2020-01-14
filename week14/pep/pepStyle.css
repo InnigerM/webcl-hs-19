@@ -118,7 +118,7 @@ div:first-child:nth-last-child(3){
 
 .soll {
     z-index: 10;
-    border: 1px solid black;
+    border: 1px solid white;
     border-top-width: 2px;
     border-radius: 0.5rem;
     position: absolute;
